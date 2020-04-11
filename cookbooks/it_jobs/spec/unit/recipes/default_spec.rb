@@ -12,6 +12,10 @@ describe 'it_jobs::default' do
     # https://github.com/chefspec/fauxhai/blob/master/PLATFORMS.md
     platform 'ubuntu', '18.04'
 
+    it 'should update the saurce code' do
+      expect(chef_run).to update_apt_update 'update_sources'
+    end
+
     it 'Inludes pip package' do
       expect(chef_run).to install_package 'python3-pip'
     end

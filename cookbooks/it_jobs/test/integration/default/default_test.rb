@@ -3,8 +3,13 @@
 # The InSpec reference, with examples and extensive documentation, can be
 # found at https://www.inspec.io/docs/reference/resources/
 
+describe package('python3-pip') do
+  it { should be_installed }
+end
+
 describe directory('/usr/local/lib/python3.6/dist-packages/atomicwrites') do
   it { should exist }
+  it { should be_version cmp == '1.3.0' }
 end
 
 describe directory('/usr/local/lib/python3.6/dist-packages/attr') do
