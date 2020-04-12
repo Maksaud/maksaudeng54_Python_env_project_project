@@ -142,3 +142,5 @@ At the end of the Sprint the trainers should run the `Retrospective` that should
 ## Notes
 
 When it comes to setting up the python slave nodes the group should create their amis. They students will not have access to the configuration of Jenkins to set one up. The instructor should create the new slave nodes when the students are ready with their `AMI's`
+
+Editing in dev-branch
