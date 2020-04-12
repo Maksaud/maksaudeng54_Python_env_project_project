@@ -9,7 +9,6 @@ end
 
 describe directory('/usr/local/lib/python3.6/dist-packages/atomicwrites') do
   it { should exist }
-  it { should be_version cmp == '1.3.0' }
 end
 
 describe directory('/usr/local/lib/python3.6/dist-packages/attr') do
@@ -77,6 +76,10 @@ describe directory('/usr/local/lib/python3.6/dist-packages/wcwidth') do
 end
 
 describe file('/usr/local/lib/python3.6/dist-packages/zipp.py') do
+  it { should exist }
+end
+
+describe directory('/var/lib/jenkins') do
   it { should exist }
 end
 
