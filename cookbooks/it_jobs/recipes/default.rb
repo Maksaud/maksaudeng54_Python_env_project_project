@@ -45,35 +45,10 @@ end
 bash 'installing_jre' do
   code <<-EOH
     sudo apt-get -y install default-jre
-  EOH
-end
-bash 'install_jdk' do
-  code <<-EOH
     sudo apt-get -y install default-jdk
-  EOH
-end
-
-bash 'getting key from jenkins' do
-  code <<-EOH
-    wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
-  EOH
-end
-
-
-bash 'getting jenkins recources' do
-  code <<-EOH
+    wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add
     sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-  EOH
-end
-
-bash 'updating source code' do
-  code <<-EOH
     sudo apt-get update -y
-  EOH
-end
-
-bash 'installing jenkins' do
-    code <<-EOH
-      sudo apt-get install jenkins -y
+    sudo apt-get install jenkins -y
     EOH
 end
