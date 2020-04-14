@@ -7,6 +7,8 @@
   - Unit Tests
   - Integration test
 - AMI
+
+- Using Github pull request build plugin
 ## The app
 
 The app creates a itjobswatch.csv file and allows you to edit it
@@ -214,3 +216,4 @@ The provisioners on packer.json
     }]
 }
 ```
+Edit
