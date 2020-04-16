@@ -29,7 +29,7 @@ describe 'it_jobs::default' do
     end
 
     it 'should create a remote Downloads folder' do
-      expect(chef_run).to create_remote_directory '/home/ubuntu/app'
+      expect(chef_run).to create_remote_directory '/home/ubuntu/requirements'
     end
 
     it 'converges successfully' do

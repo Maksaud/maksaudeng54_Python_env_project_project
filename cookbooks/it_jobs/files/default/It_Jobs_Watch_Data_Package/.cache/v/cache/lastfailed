@@ -1,5 +1,0 @@
-{
-  "tests/test_csv_generator.py": true, 
-  "tests/test_html_object_manager.py": true, 
-  "tests/test_top_30_html_reader.py": true
-}
